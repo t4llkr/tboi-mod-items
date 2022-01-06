@@ -804,6 +804,51 @@ body {
 	font-size: 15px;
 	color: #fff;
 }
+.main .textbox[data-tid='052']:after {
+	content: '-';
+	position: absolute;
+	z-index: 90;
+	right: 1px;
+	top: 0px;
+	font-size: 15px;
+	color: #fff;
+}
+.main .textbox[data-tid='053']:after {
+	content: '+';
+	position: absolute;
+	z-index: 90;
+	right: 1px;
+	top: 0px;
+	font-size: 15px;
+	color: #fff;
+}
+.main .textbox[data-tid='0111']:after {
+	content: '1';
+	position: absolute;
+	z-index: 90;
+	right: 1px;
+	top: 0px;
+	font-size: 15px;
+	color: #fff;
+}
+.main .textbox[data-tid='0112']:after {
+	content: '2';
+	position: absolute;
+	z-index: 90;
+	right: 1px;
+	top: 0px;
+	font-size: 15px;
+	color: #fff;
+}
+.main .textbox[data-tid='0113']:after {
+	content: '3';
+	position: absolute;
+	z-index: 90;
+	right: 1px;
+	top: 0px;
+	font-size: 15px;
+	color: #fff;
+}
 
 .main .textbox.dlc:after {
 	content: '*';
