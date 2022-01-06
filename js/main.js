@@ -444,7 +444,7 @@ $(document).ready(function(e) {
 			$(this).html('('+($(this).parent().parent().find('.textbox').size() - 1)+')');
 		}
 		if($(this).hasClass('harv')) {
-			$(this).html('('+($(this).parent().parent().find('.textbox').size() - 2)+')');
+			$(this).html('('+($(this).parent().parent().find('.textbox').size() - 4)+')');
 		}
 	});
 
