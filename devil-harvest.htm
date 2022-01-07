@@ -1329,7 +1329,7 @@
 				<p>• При поднятии применяет эффект десяти случайных пилюль.</p>
 				<ul><p class='item_type'>ТИП: Пассивный</p>
 				<p class='item_find'>ГДЕ НАЙТИ: <span>Босс-комната, Попрошайка</span></p>
-				<p class='tags'>* boss room pool, normal beggar pool, гмо кукуруза</p></ul></div></span></div></li>
+				<p class='tags'>* boss room pool, normal beggar pool, гмо кукуруза, генно-модифицированная кукуруза</p></ul></div></span></div></li>
 				
 				<li class='textbox ' data-tid='107' data-cid='107' data-sid='107'><div class='a'>
 				<div onclick='' class='antibirth-item anb-itm144'></div><span>
@@ -1445,10 +1445,10 @@
 				<p>• При подборе даёт уникальный, в зависимости от выбранного игроком персонажа, эффект.</p>
 				<p>• Возможно, этот предмет является прообразом для предмета Birthright из Repentance.</p>
 				<p>— Айзек - оставляет рядом с персонажем предмет Brimstone.<br>
-				— Магдалена - даёт персонажу предмет Oedipus Complex.<br>
+				— Магдалена - даёт персонажу предмет Oedipus Complex, а так же +0.2 к скорости бега, +2 к урону и +5 к удаче.<br>
 				— Каин - даёт персонажу предмет PHD.<br>
 				— Иуда - даёт персонажу предмет Dead Cat.<br>
-				— ??? - ничего.<br>
+				— ??? - вместо красных сердец будут выпадать синие.<br>
 				— Ева - забирает все контейнеры сердец, даёт половину синего сердца и взамен за каждый контейнер оставляет рядом с персонажем по две монетки.<br>
 				— Самсон - даёт персонажу предмет DOOM.<br>
 				— Азазель - +100 к дальности стрельбы.<br>
@@ -1614,7 +1614,7 @@
 				<p class='item-title'>True Chaos</p>
 				<p class='r-itemid'>ItemID: 126</p><div class='description-middle'><p class='pickup'>"Tear apart the fabric of reality"</p>
 				<p>• Если врагов в комнате нет, то при использовании вызывает портала-союзника, который будет спавнить дружелюбных врагов.</p>
-				<p>• Если же враги есть, то при использовании предмета на месте одного из них появится красный вихрь, от которого появится 4 потока серы. Потоки не нанесут урон персонажу.</p>
+				<p>• Если же враги есть, то при использовании предмета на месте одного из них появится красный вихрь, от которого пойдут 4 потока серы. Потоки не нанесут урон персонажу.</p>
 				<p>• Дружелюбные враги тоже считаются за врагов, так что вихрь может появиться и в них.</p>
 				<ul><p class='item_type'>ТИП: Активируемый</p>
 				<p class='item_recharge'>ПЕРЕЗАРЯДКА: 6 комнат</p>
@@ -1807,21 +1807,564 @@
 				<p>• +1 к здоровью.</p>
 				<ul><p class='item_type'>ТИП: Пассивный</p>
 				<p class='item_find'>ГДЕ НАЙТИ: <span>Босс-комната</span></p>
-				<p class='tags'>* boss room pool, перекус, бисквит</p></ul></div></span></div></li>
-				
-				
-				
+				<p class='tags'>* boss room pool, перекус, бисквит</p></ul></div></span></div></li>	
 	</div>
 	
 <div class="items-container rebirth">
 	<h2 class="">Брелки <span class="count"></span></h2>
 				<li class='textbox ' data-tid='1000' data-cid='1000' data-sid='1000'><div class='a'>
-				<div onclick='' class='antibirth-item anb-itm374'></div><span>
-				<p class='item-title'>Dirty Syringe</p>
-				<p class='r-itemid'>ItemID: 1</p><div class='description-middle'><p class='pickup'>"Pass it, bro"</p>
-				<p>• Накладывает на всё слёзы персонажа отпугивающий эффект.</p>
-				<p>• При получении урона с 5% шансом может добавить в инвентарь предмет <a onclick="initpp(14,0)">HIV</a>.</p>
-				<p class='tags'>* грязный шприц</p>
+				<div onclick='' class='antibirth-item anb-itm056'></div><span>
+				<p class='item-title'>Door Hinge</p>
+				<p class='r-itemid'>ItemID: 1</p><div class='description-middle'><p class='pickup'>"It's squeaky..."</p>
+				<p>• Иногда оставляет некоторые двери открытыми во время битв с врагами.</p>
+				<p class='tags'>* дверная петля</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1002' data-cid='1002' data-sid='1002'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm101'></div><span>
+				<p class='item-title'>Dad's magazine</p>
+				<p class='r-itemid'>ItemID: 2</p><div class='description-middle'><p class='pickup'>"Smells funky!"</p>
+				<p>• Иногда персонаж может выстрелить кучкой слёз, как при Monstro's Tooth.</p>
+				<p class='tags'>* папин журнал, батин журнал</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1003' data-cid='1003' data-sid='1003'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm102'></div><span>
+				<p class='item-title'>Funky Critter</p>
+				<p class='r-itemid'>ItemID: 3</p><div class='description-middle'><p class='pickup'>"Glowy!"</p>
+				<p>• Применяет эффект случайной карты после убийства босса.</p>
+				<p class='tags'>* пездатая креветка), фиолетовое нечто</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1004' data-cid='1004' data-sid='1004'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm300'></div><span>
+				<p class='item-title'>Prescription</p>
+				<p class='r-itemid'>ItemID: 4</p><div class='description-middle'><p class='pickup'>"Something for every ailment!"</p>
+				<p>• При получении урона персонаж с 50% шансом может оставить рядом с собой пилюлю.</p>
+				<p class='tags'>* бумага, бумажка, лист, рецепт от врача</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1005' data-cid='1005' data-sid='1005'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm301'></div><span>
+				<p class='item-title'>Swallowed Marble</p>
+				<p class='r-itemid'>ItemID: 5</p><div class='description-middle'><p class='pickup'>"Unpredictable!"</p>
+				<p>• Персонаж время от времени будет получать эффекты случайных пилюль.</p>
+				<p class='tags'>* проглоченный шарик, проглоченный мячик</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1006' data-cid='1006' data-sid='1006'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm304'></div><span>
+				<p class='item-title'>Brown Heart</p>
+				<p class='r-itemid'>ItemID: 6</p><div class='description-middle'><p class='pickup'>"Fly fanatism"</p>
+				<p>• Каждую секунду рядом с персонажем будет появляться чёрная муха.</p>
+				<p class='tags'>* коричневое сердце, сердце из говна</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1007' data-cid='1007' data-sid='1007'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm040'></div><span>
+				<p class='item-title'>Trinity Worm</p>
+				<p class='r-itemid'>ItemID: 7</p><div class='description-middle'><p class='pickup'>"Trinity Tears"</p>
+				<p>• Слёзы будут лететь по траектории, выстраивающей форму <a href="https://www.google.com/search?q=трикветр">трикветра</a>.</p>
+				<p class='tags'>* строенный червь</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1008' data-cid='1008' data-sid='1008'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm030'></div><span>
+				<p class='item-title'>Brain Worm</p>
+				<p class='r-itemid'>ItemID: 8</p><div class='description-middle'><p class='pickup'>"How strange"</p>
+				<p>• Персонажа будет толкать в сторону направления стрельбы.</p>
+				<p class='tags'>* мозговой червь</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1009' data-cid='1009' data-sid='1009'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm032'></div><span>
+				<p class='item-title'>Fuck Worm</p>
+				<p class='r-itemid'>ItemID: 9</p><div class='description-middle'><p class='pickup'>"What the fuck?"</p>
+				<p>• Персонажа будет ЛЮТО КИДАТЬ в сторону стрельбы.</p>
+				<p class='tags'>* ебанутый червь, ёбнутый червь, ебущийся червь, нахуй червь</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1010' data-cid='1010' data-sid='1010'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm035'></div><span>
+				<p class='item-title'>Inch Worm</p>
+				<p class='r-itemid'>ItemID: 10</p><div class='description-middle'><p class='pickup'>"Slow Crawler"</p>
+				<p>• Слёзы персонажа будут лететь по мелкой синусоиде, время от времени останавливаясь в полёте.</p>
+				<p>• У слёз не будет ограничения в дальности полёта.</p>
+				<p class='tags'>* червь-гусеница, дюймовый червь</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1011' data-cid='1011' data-sid='1011'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm038'></div><span>
+				<p class='item-title'>Tired Worm</p>
+				<p class='r-itemid'>ItemID: 11</p><div class='description-middle'><p class='pickup'>"It's acting a bit oddly"</p>
+				<p>• При стрельбе вправо или вниз слёзы персонажа будут медленно лететь по диагональной синусоиде.</p>
+				<p>• При стрельбе вверх или влево слёзы будут очень быстро лететь по диагонали, время от времени снижая скорость.</p>
+				<p class='tags'>* уставший червь, круглый червь, спящий червь</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1012' data-cid='1012' data-sid='1012'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm361'></div><span>
+				<p class='item-title'>Square Worm</p>
+				<p class='r-itemid'>ItemID: 12</p><div class='description-middle'><p class='pickup'>"Hard turns only"</p>
+				<p>• Слёзы персонажа будут лететь по замкнутой траектории, образуя форму квадрата.</p>
+				<p class='tags'>* квадратный червь</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1013' data-cid='1013' data-sid='1013'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm354'></div><span>
+				<p class='item-title'>Ziggity Worm</p>
+				<p class='r-itemid'>ItemID: 13</p><div class='description-middle'><p class='pickup'>"Zig zag"</p>
+				<p>• Слёзы персонажа будут лететь по зигзагообразной траектории.</p>
+				<p class='tags'>* зигзаговый червь</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1014' data-cid='1014' data-sid='1014'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm355'></div><span>
+				<p class='item-title'>Fancy Worm</p>
+				<p class='r-itemid'>ItemID: 14</p><div class='description-middle'><p class='pickup'>"When in doubt"</p>
+				<p>• Слёзы персонажа будут лететь по очень странной траектории, которую на словах объяснить довольно сложно.</p>
+				<p>• Короче, с этоим брелком вы хрен в кого попадёте. Я всё сказал.</p>
+				<p class='tags'>* капризный червь, червь с цилиндром, червь-аристократ</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1015' data-cid='1015' data-sid='1015'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm332'></div><span>
+				<p class='item-title'>Rainbow Rock</p>
+				<p class='r-itemid'>ItemID: 15</p><div class='description-middle'><p class='pickup'>"It's beautiful"</p>
+				<p>• Если у персонажа есть предмет Rock, то все брелки будут заменены на брелки-камни.</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p> 
+				<p class='tags'>* радужный камень</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1016' data-cid='1016' data-sid='1016'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm164'></div><span>
+				<p class='item-title'>Igneous Rock</p>
+				<p class='r-itemid'>ItemID: 16</p><div class='description-middle'><p class='pickup'>"Probably straight from a volcano"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании рядом с персонажем будет появляться бомба случайного типа. Осторожно, может выпасть тролль-бомба.</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p> 
+				<p class='tags'>* вулканический камень, раскалённый камень</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1017' data-cid='1017' data-sid='1017'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm165'></div><span>
+				<p class='item-title'>Keystone Rock</p>
+				<p class='r-itemid'>ItemID: 17</p><div class='description-middle'><p class='pickup'>"It's the key"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании рядом с персонажем будет появляться ключ случайного типа.</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p> 
+				<p class='tags'>* камень в форме ключа, каменный ключ</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1018' data-cid='1018' data-sid='1018'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm392'></div><span>
+				<p class='item-title'>Valuable Rock</p>
+				<p class='r-itemid'>ItemID: 18</p><div class='description-middle'><p class='pickup'>"Someone probably likes it"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании рядом с персонажем будет появляться монета случайного типа.</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p> 
+				<p class='tags'>* стоящий камень, камень с долларом</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1019' data-cid='1019' data-sid='1019'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm107'></div><span>
+				<p class='item-title'>Charged Rock</p>
+				<p class='r-itemid'>ItemID: 19</p><div class='description-middle'><p class='pickup'>"Seems electric"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании рядом с персонажем будет появляться батарейка случайного типа.</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p> 
+				<p class='tags'>* заряженный камень</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1020' data-cid='1020' data-sid='1020'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm156'></div><span>
+				<p class='item-title'>Heart-shaped Rock</p>
+				<p class='r-itemid'>ItemID: 20</p><div class='description-middle'><p class='pickup'>"Wait it's a trinket?"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании рядом с персонажем будет появляться сердце случайного типа.</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p> 
+				<p class='tags'>* камень в форме сердца</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1021' data-cid='1021' data-sid='1021'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm160'></div><span>
+				<p class='item-title'>Holy Rock</p>
+				<p class='r-itemid'>ItemID: 21</p><div class='description-middle'><p class='pickup'>"From God's embrace"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании рядом с персонажем будет появляться синее сердце.</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p> 
+				<p class='tags'>* святой камень, камень с нимбом</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1022' data-cid='1022' data-sid='1022'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm135'></div><span>
+				<p class='item-title'>Demonic Rock</p>
+				<p class='r-itemid'>ItemID: 22</p><div class='description-middle'><p class='pickup'>"The devil prefers metal"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании рядом с персонажем будет появляться чёрное сердце.</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p> 
+				<p class='tags'>* демонический камень, горящий камень, адский камень</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1023' data-cid='1023' data-sid='1023'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm395'></div><span>
+				<p class='item-title'>Winged Rock</p>
+				<p class='r-itemid'>ItemID: 23</p><div class='description-middle'><p class='pickup'>"You don't get wings though"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании рядом с персонажем будет появляться три синих мухи.</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p> 
+				<p class='tags'>* крылатый камень, камень с крыльями</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1024' data-cid='1024' data-sid='1024'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm009'></div><span>
+				<p class='item-title'>Arach-Rock</p>
+				<p class='r-itemid'>ItemID: 24</p><div class='description-middle'><p class='pickup'>"Make sure it doesn't scurry away!"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании рядом с персонажем будет появляться синий паук.</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p> 
+				<p class='tags'>* камень-паук, арахнокамень, арахно-камень, камень с ножками, камень с лапками</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1025' data-cid='1025' data-sid='1025'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm145'></div><span>
+				<p class='item-title'>Four-leafed Rock</p>
+				<p class='r-itemid'>ItemID: 25</p><div class='description-middle'><p class='pickup'>"Better than three"</p>
+				<p>• Если у персонажа есть предмет Rock, то при подборе этого брелка персонаж получит +1 к удаче.</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p> 
+				<p class='tags'>* камень-клевер, четырёхлистный камень</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1026' data-cid='1026' data-sid='1026'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm018'></div><span>
+				<p class='item-title'>Bloody Rock</p>
+				<p class='r-itemid'>ItemID: 26</p><div class='description-middle'><p class='pickup'>"That must've hurt"</p>
+				<p>• Если у персонажа есть предмет Rock, то при подборе этого брелка персонаж получит +0.5 к урону.</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p> 
+				<p class='tags'>* кровавый камень, камень в крови, кровь</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1027' data-cid='1027' data-sid='1027'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm343'></div><span>
+				<p class='item-title'>Sad Rock</p>
+				<p class='r-itemid'>ItemID: 27</p><div class='description-middle'><p class='pickup'>":("</p>
+				<p>• Если у персонажа есть предмет Rock, то при подборе этого брелка персонаж получит +5 к скорости атаки.</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p> 
+				<p class='tags'>* грустный камень, плачущий камень, слёзы</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1028' data-cid='1028' data-sid='1028'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm350'></div><span>
+				<p class='item-title'>Speedy Rock</p>
+				<p class='r-itemid'>ItemID: 28</p><div class='description-middle'><p class='pickup'>"Gotta go fast"</p>
+				<p>• Если у персонажа есть предмет Rock, то при подборе этого брелка персонаж получит +0.3 к скорости бега.</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p> 
+				<p class='tags'>* скоростной камень</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1029' data-cid='1029' data-sid='1029'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm388'></div><span>
+				<p class='item-title'>Thrown Rock</p>
+				<p class='r-itemid'>ItemID: 29</p><div class='description-middle'><p class='pickup'>"But who threw it?"</p>
+				<p>• Если у персонажа есть предмет Rock, то при подборе этого брелка персонаж получит +0.1 к скорости полёта слёз.</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p> 
+				<p class='tags'>* летящий камень, выброшенный камень</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1030' data-cid='1030' data-sid='1030'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm171'></div><span>
+				<p class='item-title'>Long Rock</p>
+				<p class='r-itemid'>ItemID: 30</p><div class='description-middle'><p class='pickup'>"Must be above average!"</p>
+				<p>• Если у персонажа есть предмет Rock, то при подборе этого брелка персонаж получит +0.1 к дальности атаки.</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p> 
+				<p class='tags'>* длинный камень</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1031' data-cid='1031' data-sid='1031'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm348'></div><span>
+				<p class='item-title'>Smelly Rock</p>
+				<p class='r-itemid'>ItemID: 31</p><div class='description-middle'><p class='pickup'>"Where's it been?"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании персонаж будет пукать, выпуская отравляющее облако.</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p> 
+				<p class='tags'>* пахнущий камень, воняющий камень, камень с говном, а зачем на камень насрали</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1032' data-cid='1032' data-sid='1032'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm011'></div><span>
+				<p class='item-title'>Bad Rock</p>
+				<p class='r-itemid'>ItemID: 32</p><div class='description-middle'><p class='pickup'>"haha NICE one"</p>
+				<p>• Если у персонажа есть предмет Rock, то при подборе этого брелка персонаж сразу же умрёт.</p>
+				<p>• Если же предмета нет, то брелок не сработает.</p> 
+				<p class='tags'>* плохой камень, злой камень, злобный камень, камень-чёрт, чертёнок, хуебес</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1033' data-cid='1033' data-sid='1033'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm349'></div><span>
+				<p class='item-title'>Soft Rock</p>
+				<p class='r-itemid'>ItemID: 33</p><div class='description-middle'><p class='pickup'>"Still cracks your teeth"</p>
+				<p>• Если у персонажа есть предмет Rock, то при подборе этого брелка персонаж получит -0.5 к урону.</p>
+				<p>• Если же предмета нет, то брелок не сработает.</p> 
+				<p class='tags'>* мягкий камень, камень-пластилин</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1034' data-cid='1034' data-sid='1034'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm347'></div><span>
+				<p class='item-title'>Slow Rock</p>
+				<p class='r-itemid'>ItemID: 34</p><div class='description-middle'><p class='pickup'>"Tired"</p>
+				<p>• Если у персонажа есть предмет Rock, то при подборе этого брелка персонаж получит -0.3 к скорости бега.</p>
+				<p>• Если же предмета нет, то брелок не сработает.</p> 
+				<p class='tags'>* медленный камень, круглый камень</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1035' data-cid='1035' data-sid='1035'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm155'></div><span>
+				<p class='item-title'>Happy Rock</p>
+				<p class='r-itemid'>ItemID: 35</p><div class='description-middle'><p class='pickup'>":)"</p>
+				<p>• Если у персонажа есть предмет Rock, то при подборе этого брелка персонаж получит -5 к скорости атаки.</p>
+				<p>• Если же предмета нет, то брелок не сработает.</p> 
+				<p class='tags'>* весёлый камень, счастливый камень, улыбающийся камень</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1036' data-cid='1036' data-sid='1036'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm378'></div><span>
+				<p class='item-title'>Stuck Rock</p>
+				<p class='r-itemid'>ItemID: 36</p><div class='description-middle'><p class='pickup'>"It's wedged right in there"</p>
+				<p>• Если у персонажа есть предмет Rock, то при подборе этого брелка персонаж получит -1 к скорости полёта слёз.</p>
+				<p>• Если же предмета нет, то брелок не сработает.</p> 
+				<p class='tags'>* застрявший камень, лежачий камень, лежащий камень</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1037' data-cid='1037' data-sid='1037'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm345'></div><span>
+				<p class='item-title'>Short Rock</p>
+				<p class='r-itemid'>ItemID: 37</p><div class='description-middle'><p class='pickup'>"haha i'm bigger loser"</p>
+				<p>• Если у персонажа есть предмет Rock, то при подборе этого брелка персонаж получит -1 к дальности атаки.</p>
+				<p>• Если же предмета нет, то брелок не сработает.</p> 
+				<p class='tags'>* короткий камень, маленький камень</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1038' data-cid='1038' data-sid='1038'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm390'></div><span>
+				<p class='item-title'>Unlucky Rock</p>
+				<p class='r-itemid'>ItemID: 38</p><div class='description-middle'><p class='pickup'>"It's down on its luck"</p>
+				<p>• Если у персонажа есть предмет Rock, то при подборе этого брелка персонаж получит -1 к удаче.</p>
+				<p>• Если же предмета нет, то брелок не сработает.</p> 
+				<p class='tags'>* разбитый камень, расколотый камень, несчастливый камень</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1039' data-cid='1039' data-sid='1039'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm352'></div><span>
+				<p class='item-title'>Spooky Rock</p>
+				<p class='r-itemid'>ItemID: 39</p><div class='description-middle'><p class='pickup'>"Ooo scary!"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании все враги в комнате будут напуганы.</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p> 
+				<p class='tags'>* пугающий камень, страшный камень, камень-тыква</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1040' data-cid='1040' data-sid='1040'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm149'></div><span>
+				<p class='item-title'>Glam Rock</p>
+				<p class='r-itemid'>ItemID: 40</p><div class='description-middle'><p class='pickup'>"Glitter is cool"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании все враги в комнате будут зачарованы.</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p> 
+				<p class='tags'>* блестящий камень</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1041' data-cid='1041' data-sid='1041'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm015'></div><span>
+				<p class='item-title'>Big Rock</p>
+				<p class='r-itemid'>ItemID: 41</p><div class='description-middle'><p class='pickup'>"It's kinda large"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании он вокруг персонажа будет выстраиваться ловушка из камней. Выбраться из неё можно, если поставить бомбу (и получить от неё же урон) или перезайти в забег через главное меню.</p>
+				<p>• Если же предмета нет, то брелок не сработает.</p> 
+				<p class='tags'>* большой камень</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1042' data-cid='1042' data-sid='1042'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm137'></div><span>
+				<p class='item-title'>Dog-Shaped Rock</p>
+				<p class='r-itemid'>ItemID: 42</p><div class='description-middle'><p class='pickup'>"Bork bork"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании будет проигрываться звук собачьего воя.</p>
+				<p>• С 15% шансом можно будет один раз за забег получить Cricket's Head, Cricket's Body или Cricket's Paw.</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p> 
+				<p class='tags'>* камень-пёс, камень-собака, камень в форме собаки</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1043' data-cid='1043' data-sid='1043'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm340'></div><span>
+				<p class='item-title'>Rolling Rock</p>
+				<p class='r-itemid'>ItemID: 43</p><div class='description-middle'><p class='pickup'>"Make sure it doesn't roll away!"</p>
+				<p>• Ничего не делает. Абсолютно бесполезный брелок.</p> 
+				<p class='tags'>* крутящийся камень, кручёный камень</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1044' data-cid='1044' data-sid='1044'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm109'></div><span>
+				<p class='item-title'>Cobwebby Rock</p>
+				<p class='r-itemid'>ItemID: 44</p><div class='description-middle'><p class='pickup'>"Eww it's sticky"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании все враги в комнате будут замороживаться.</p>
+				<p>• Если же предмета нет, то брелок не сработает.</p> 
+				<p>• ЭФФЕКТ БРЕЛКА КРАШИТ ИГРУ. НЕ БЕРИТЕ ЕГО.</p>
+				<p class='tags'>* камень в паутине</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1045' data-cid='1045' data-sid='1045'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm339'></div><span>
+				<p class='item-title'>Rockstro</p>
+				<p class='r-itemid'>ItemID: 45</p><div class='description-middle'><p class='pickup'>"Looks a bit familiar."</p>
+				<p>• Если у персонажа есть предмет Rock и этот брелок, то все враги будут превращаться в Монстро.</p>
+				<p>• Если же предмета нет, то брелок не сработает.</p> 
+				<p class='tags'>* рокстро, камень-монстро, камень-министро</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1046' data-cid='1046' data-sid='1046'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm176'></div><span>
+				<p class='item-title'>Midas' Rock</p>
+				<p class='r-itemid'>ItemID: 46</p><div class='description-middle'><p class='pickup'>"Fool's gold"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании все враги в комнате будут ненадолго превращаться в золотые статуи, при уничтожении которых можно получить монеты.</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p> 
+				<p class='tags'>* камень мидаса, жёлтый камень, золотой камень</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1047' data-cid='1047' data-sid='1047'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm173'></div><span>
+				<p class='item-title'>Medusa's Rock</p>
+				<p class='r-itemid'>ItemID: 47</p><div class='description-middle'><p class='pickup'>"Did that rock hiss at me?"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании все враги в комнате будут заморожены на несколько секунд.</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p>
+				<p class='tags'>* камень медузы, камень-змея, змеиный камень, змий</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1048' data-cid='1048' data-sid='1048'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm396'></div><span>
+				<p class='item-title'>Yum Rock</p>
+				<p class='r-itemid'>ItemID: 48</p><div class='description-middle'><p class='pickup'>"Doesn't look very yummy"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании персонаж будет лечиться на одно сердце (эффект Yum Heart).</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p>
+				<p class='tags'>* ям камень, вкусный камень, камень-сердце, сердцекамень, ХАРТСТОУН РЕФЕРЕНС!??!???!?!?!?!?! :fatass::fatass::fatass:</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1049' data-cid='1049' data-sid='1049'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm006'></div><span>
+				<p class='item-title'>6 Sided Rock</p>
+				<p class='r-itemid'>ItemID: 49</p><div class='description-middle'><p class='pickup'>"It rolls pretty well."</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании все предметы на пьедесталах в комнате будут меняться на случайные (эффект D6).</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p>
+				<p class='tags'>* шестигранный камень, камень-кубик, камень-кость, д6</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1050' data-cid='1050' data-sid='1050'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm013'></div><span>
+				<p class='item-title'>Rock of Belial</p>
+				<p class='r-itemid'>ItemID: 50</p><div class='description-middle'><p class='pickup'>"It winked at me!"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании персонажу будет увеличен урон до момента выхода из комнаты (эффект The Book of Belial).</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p>
+				<p class='tags'>* камень белиала</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1051' data-cid='1051' data-sid='1051'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm147'></div><span>
+				<p class='item-title'>Rock of Friends</p>
+				<p class='r-itemid'>ItemID: 51</p><div class='description-middle'><p class='pickup'>"Now I can have double the friends!"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании будет появляться от 1 до 4 синих пауков, наносящих врагам удвоенный урон персонажа (эффект Box of Spiders).</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p>
+				<p class='tags'>* камень с мухами, камень друзей</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1052' data-cid='1052' data-sid='1052'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm394'></div><span>
+				<p class='item-title'>Void Rock</p>
+				<p class='r-itemid'>ItemID: 52</p><div class='description-middle'><p class='pickup'>"Sucks stuff up"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании будут поглощаться все предметы на пьедесталах в комнате. За пассивный предмет будет даваться бонус к случайным характеристикам, за активируемый - его эффект при следующем использовании данного предмета (эффект Void).</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p>
+				<p class='tags'>* портальный камень, камень-войд, камень-воид</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1053' data-cid='1053' data-sid='1053'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm330'></div><span>
+				<p class='item-title'>Poop Rock</p>
+				<p class='r-itemid'>ItemID: 53</p><div class='description-middle'><p class='pickup'>"Cant've been nice to push out"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании персонаж будет оставлять рядом с собой какашку (эффект The Poop).</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p>
+				<p class='tags'>* камень-какашка, камень-говно, окаменевшее говно</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1054' data-cid='1054' data-sid='1054'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm337'></div><span>
+				<p class='item-title'>Razor Rock</p>
+				<p class='r-itemid'>ItemID: 54</p><div class='description-middle'><p class='pickup'>"Still seems pretty shart"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании персонаж будет в обмен на здоровье получать плюс к урону до конца комнаты (эффект Razor Blade).</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p>
+				<p class='tags'>* камень-лезвие, острый камень</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1055' data-cid='1055' data-sid='1055'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm005'></div><span>
+				<p class='item-title'>4 Sided Rock</p>
+				<p class='r-itemid'>ItemID: 55</p><div class='description-middle'><p class='pickup'>"Only those hard as a rock dare to roll it"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании все предметы в инвентаре персонажа будут заменяться на случайные, но из тех же пулов (эффект D4).</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p>
+				<p class='tags'>* четырёхгранный камень, камень-кубик, камень-кость, д4</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1056' data-cid='1056' data-sid='1056'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm187'></div><span>
+				<p class='item-title'>Rocky Nickel</p>
+				<p class='r-itemid'>ItemID: 56</p><div class='description-middle'><p class='pickup'>"The first nickel I ever made!"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании с 50% шансом на полу может появиться монета случайного типа (эффект Wooden Nickel).</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p>
+				<p class='tags'>* каменная монета, каменный пятак</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1057' data-cid='1057' data-sid='1057'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm142'></div><span>
+				<p class='item-title'>Rock Engine</p>
+				<p class='r-itemid'>ItemID: 57</p><div class='description-middle'><p class='pickup'>"Only for cheaters!"</p>
+				<p>• Ничего не делает. Абсолютно бесполезный брелок.</p>
+				<p class='tags'>* каменный движок, камень в форме буквы Е, е-камень</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1058' data-cid='1058' data-sid='1058'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm334'></div><span>
+				<p class='item-title-bbig'>Random Active Item Rock</p>
+				<p class='r-itemid'>ItemID: 58</p><div class='description-middle'><p class='pickup'>"???"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании будет применяться эффект случайного активируемого предмета из игры (эффект Dead Sea Scrolls).</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p>
+				<p class='tags'>* серый знак вопроса, камень случайного активного предмета, камень случайной активки</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1059' data-cid='1059' data-sid='1059'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm157'></div><span>
+				<p class='item-title'>Heavy Rock</p>
+				<p class='r-itemid'>ItemID: 59</p><div class='description-middle'><p class='pickup'>"I can barely carry it!"</p>
+				<p>• Ничего не делает. Абсолютно бесполезный брелок.</p>
+				<p class='tags'>* тяжёлый камень, магила</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1060' data-cid='1060' data-sid='1060'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm136'></div><span>
+				<p class='item-title'>Dirty Rock</p>
+				<p class='r-itemid'>ItemID: 60</p><div class='description-middle'><p class='pickup'>"All sorts of hidden treasures!"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании все враги в комнате получат эффект отравления.</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p>
+				<p class='tags'>* грязный камень, камень в грязи</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1061' data-cid='1061' data-sid='1061'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm175'></div><span>
+				<p class='item-title'>Microscopic Rock</p>
+				<p class='r-itemid'>ItemID: 61</p><div class='description-middle'><p class='pickup'>"I can barely see it"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании все враги в комнате будут уменьшены.</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p>
+				<p class='tags'>* очень маленький камень, микроскопический камень, а где</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1062' data-cid='1062' data-sid='1062'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm163'></div><span>
+				<p class='item-title'>Hot Rock</p>
+				<p class='r-itemid'>ItemID: 62</p><div class='description-middle'><p class='pickup'>"Don't hold it for too long"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании все враги в комнате будут подожжены.</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p>
+				<p class='tags'>* горячий камень, раскалённый камень</p>
+				</div></span></div></li>
+				
+				<li class='textbox ' data-tid='1063' data-cid='1063' data-sid='1063'><div class='a'>
+				<div onclick='' class='antibirth-item anb-itm189'></div><span>
+				<p class='item-title'>Non-Euclidean Rock</p>
+				<p class='r-itemid'>ItemID: 63</p><div class='description-middle'><p class='pickup'>"How does it work?"</p>
+				<p>• Если у персонажа есть предмет Rock, то при его использовании все враги в комнате будут оглушены.</p>
+				<p>• Если же предмета нет, то брелок бесполезен.</p>
+				<p class='tags'>* треугольный камень, неевклидовый камень</p>
 				</div></span></div></li>
 	</div>
 	
