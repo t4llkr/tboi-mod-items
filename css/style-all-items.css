@@ -1733,6 +1733,188 @@ body.repentance .tarot-container .rebirth-item.r-card1095 { background-position:
 body.repentance .tarot-container .rebirth-item.r-card1096 { background-position: -500px -200px;}
 body.repentance .tarot-container .rebirth-item.r-card1097 { background-position: -550px -200px;}
 
-.items-container .abort-item{background:url(../images/parts/abortionbirth/items.png) top left no-repeat;width:50px;height:50px;}
-body.abort .items-container .abort-item{background-image:url(../images/parts/abortionbirth/items.png);}
-.items-container .abort.52card{background-position:   0px 0px;}
+.items-container .hyperbirth-item{background:url(../images/parts/hyper/hyperbirth.png) top left no-repeat;width:50px;height:50px;}
+.items-container .hyperbirth-item.hyp01   { background-position: -0px 0px;}
+.items-container .hyperbirth-item.hyp02   { background-position: -50px 0px;}
+.items-container .hyperbirth-item.hyp03   { background-position:-100px 0px;}
+.items-container .hyperbirth-item.hyp04   { background-position:-150px 0px;}
+.items-container .hyperbirth-item.hyp05   { background-position:-200px 0px;}
+.items-container .hyperbirth-item.hyp06   { background-position:-250px 0px;}
+.items-container .hyperbirth-item.hyp07   { background-position:-300px 0px;}
+.items-container .hyperbirth-item.hyp08   { background-position:-350px 0px;}
+.items-container .hyperbirth-item.hyp09   { background-position:-400px 0px;}
+.items-container .hyperbirth-item.hyp10   { background-position: -0px -50px;}
+.items-container .hyperbirth-item.hyp11   { background-position: -50px -50px;}
+.items-container .hyperbirth-item.hyp12   { background-position:-100px -50px;}
+.items-container .hyperbirth-item.hyp13   { background-position:-150px -50px;}
+.items-container .hyperbirth-item.hyp14   { background-position:-200px -50px;}
+.items-container .hyperbirth-item.hyp15   { background-position:-250px -50px;}
+.items-container .hyperbirth-item.hyp16   { background-position:-300px -50px;}
+.items-container .hyperbirth-item.hyp17   { background-position:-350px -50px;}
+.items-container .hyperbirth-item.hyp18   { background-position:-400px -50px;}
+.items-container .hyperbirth-item.hyp19   { background-position: -0px -100px;}
+.items-container .hyperbirth-item.hyp20   { background-position: -50px -100px;}
+.items-container .hyperbirth-item.hyp21   { background-position:-100px -100px;}
+.items-container .hyperbirth-item.hyp22   { background-position:-150px -100px;}
+.items-container .hyperbirth-item.hyp23   { background-position:-200px -100px;}
+.items-container .hyperbirth-item.hyp24   { background-position:-250px -100px;}
+.items-container .hyperbirth-item.hyp25   { background-position:-300px -100px;}
+.items-container .hyperbirth-item.hyp26   { background-position:-350px -100px;}
+.items-container .hyperbirth-item.hyp27   { background-position:-400px -100px;}
+.items-container .hyperbirth-item.hyp28   { background-position: -0px -150px;}
+.items-container .hyperbirth-item.hyp29   { background-position: -50px -150px;}
+.items-container .hyperbirth-item.hyp30   { background-position:-100px -150px;}
+.items-container .hyperbirth-item.hyp31   { background-position:-150px -150px;}
+.items-container .hyperbirth-item.hyp32   { background-position:-200px -150px;}
+.items-container .hyperbirth-item.hyp33   { background-position:-250px -150px;}
+.items-container .hyperbirth-item.hyp34   { background-position:-300px -150px;}
+.items-container .hyperbirth-item.hyp35   { background-position:-350px -150px;}
+.items-container .hyperbirth-item.hyp36   { background-position:-400px -150px;}
+.items-container .hyperbirth-item.hyp37   { background-position: -0px -200px;}
+.items-container .hyperbirth-item.hyp38   { background-position: -50px -200px;}
+.items-container .hyperbirth-item.hyp39   { background-position:-100px -200px;}
+.items-container .hyperbirth-item.hyp40   { background-position:-150px -200px;}
+.items-container .hyperbirth-item.hyp41   { background-position:-200px -200px;}
+.items-container .hyperbirth-item.hyp42   { background-position:-250px -200px;}
+.items-container .hyperbirth-item.hyp43   { background-position:-300px -200px;}
+.items-container .hyperbirth-item.hyp44   { background-position:-350px -200px;}
+.items-container .hyperbirth-item.hyp45   { background-position:-400px -200px;}
+.items-container .hyperbirth-item.hyp46   { background-position: -0px -250px;}
+.items-container .hyperbirth-item.hyp47   { background-position: -50px -250px;}
+.items-container .hyperbirth-item.hyp48   { background-position:-100px -250px;}
+.items-container .hyperbirth-item.hyp49   { background-position:-150px -250px;}
+.items-container .hyperbirth-item.hyp50   { background-position:-200px -250px;}
+.items-container .hyperbirth-item.hyp51   { background-position:-250px -250px;}
+.items-container .hyperbirth-item.hyp52   { background-position:-300px -250px;}
+.items-container .hyperbirth-item.hyp53   { background-position:-350px -250px;}
+.items-container .hyperbirth-item.hyp54   { background-position:-400px -250px;}
+.items-container .hyperbirth-item.hyp55   { background-position: -0px -300px;}
+.items-container .hyperbirth-item.hyp56   { background-position: -50px -300px;}
+.items-container .hyperbirth-item.hyp57   { background-position:-100px -300px;}
+.items-container .hyperbirth-item.hyp58   { background-position:-150px -300px;}
+.items-container .hyperbirth-item.hyp59   { background-position:-200px -300px;}
+.items-container .hyperbirth-item.hyp60   { background-position:-250px -300px;}
+.items-container .hyperbirth-item.hyp61   { background-position:-300px -300px;}
+.items-container .hyperbirth-item.hyp62   { background-position:-350px -300px;}
+.items-container .hyperbirth-item.hyp63   { background-position:-400px -300px;}
+.items-container .hyperbirth-item.hyp64   { background-position: -0px -350px;}
+.items-container .hyperbirth-item.hyp65   { background-position: -50px -350px;}
+.items-container .hyperbirth-item.hyp66   { background-position:-100px -350px;}
+.items-container .hyperbirth-item.hyp67   { background-position:-150px -350px;}
+.items-container .hyperbirth-item.hyp68   { background-position:-200px -350px;}
+.items-container .hyperbirth-item.hyp69   { background-position:-250px -350px;}
+.items-container .hyperbirth-item.hyp70   { background-position:-300px -350px;}
+.items-container .hyperbirth-item.hyp71   { background-position:-350px -350px;}
+.items-container .hyperbirth-item.hyp72   { background-position:-400px -350px;}
+.items-container .hyperbirth-item.hyp73   { background-position: -0px -400px;}
+.items-container .hyperbirth-item.hyp74   { background-position: -50px -400px;}
+.items-container .hyperbirth-item.hyp75   { background-position:-100px -400px;}
+.items-container .hyperbirth-item.hyp76   { background-position:-150px -400px;}
+.items-container .hyperbirth-item.hyp77   { background-position:-200px -400px;}
+.items-container .hyperbirth-item.hyp78   { background-position:-250px -400px;}
+.items-container .hyperbirth-item.hyp79   { background-position:-300px -400px;}
+.items-container .hyperbirth-item.hyp80   { background-position:-350px -400px;}
+.items-container .hyperbirth-item.hyp81   { background-position:-400px -400px;}
+
+.items-container .pills{background:url(../images/parts/pills.png) top left no-repeat;width:50px;height:50px;}
+.items-container .pills.p1   { background-position: -0px 0px;}
+.items-container .pills.p2   { background-position: -50px 0px;}
+.items-container .pills.p3   { background-position:-100px 0px;}
+.items-container .pills.p4   { background-position:-150px 0px;}
+.items-container .pills.p5   { background-position:-200px 0px;}
+.items-container .pills.p6   { background-position:-250px 0px;}
+.items-container .pills.p7   { background-position:-300px 0px;}
+.items-container .pills.p8   { background-position:-350px 0px;}
+.items-container .pills.p9   { background-position:-400px 0px;}
+.items-container .pills.p10   { background-position: -450px 0px;}
+.items-container .pills.p11   { background-position: -500px 0px;}
+.items-container .pills.p12   { background-position: -550px 0px;}
+.items-container .pills.p13   { background-position: -600px 0px;}
+
+.items-container .coll{background:url(../images/parts/collections.png) top left no-repeat;width:50px;height:50px;}
+.items-container .coll.i1   { background-position: -0px 0px;}
+.items-container .coll.i2   { background-position: -50px 0px;}
+.items-container .coll.i3   { background-position:-100px 0px;}
+.items-container .coll.i4   { background-position:-150px 0px;}
+.items-container .coll.i5   { background-position:-200px 0px;}
+.items-container .coll.i6   { background-position:-250px 0px;}
+.items-container .coll.i7   { background-position:-300px 0px;}
+.items-container .coll.i8   { background-position:-350px 0px;}
+.items-container .coll.i9   { background-position:-400px 0px;}
+.items-container .coll.i10   { background-position:-450px 0px;}
+.items-container .coll.i11   { background-position:-500px 0px;}
+.items-container .coll.i12   { background-position:-550px 0px;}
+.items-container .coll.i13   { background-position:-600px 0px;}
+.items-container .coll.i14   { background-position:-650px 0px;}
+.items-container .coll.i15   { background-position:-700px 0px;}
+.items-container .coll.i16   { background-position:-750px 0px;}
+.items-container .coll.i17   { background-position:-800px 0px;}
+.items-container .coll.i18   { background-position: -0px -50px;}
+.items-container .coll.i19   { background-position: -50px -50px;}
+.items-container .coll.i20   { background-position:-100px -50px;}
+.items-container .coll.i21   { background-position:-150px -50px;}
+.items-container .coll.i22   { background-position:-200px -50px;}
+.items-container .coll.i23   { background-position:-250px -50px;}
+.items-container .coll.i24   { background-position:-300px -50px;}
+.items-container .coll.i25   { background-position:-350px -50px;}
+.items-container .coll.i26   { background-position:-400px -50px;}
+.items-container .coll.i27   { background-position:-450px -50px;}
+.items-container .coll.i28   { background-position:-500px -50px;}
+.items-container .coll.i29   { background-position:-550px -50px;}
+.items-container .coll.i30   { background-position:-600px -50px;}
+.items-container .coll.i31   { background-position:-650px -50px;}
+.items-container .coll.i32   { background-position:-700px -50px;}
+.items-container .coll.i33   { background-position:-750px -50px;}
+.items-container .coll.i34   { background-position:-800px -50px;}
+.items-container .coll.i35   { background-position: -0px -100px;}
+.items-container .coll.i36   { background-position: -50px -100px;}
+.items-container .coll.i37   { background-position:-100px -100px;}
+.items-container .coll.i38   { background-position:-150px -100px;}
+.items-container .coll.i39   { background-position:-200px -100px;}
+.items-container .coll.i40   { background-position:-250px -100px;}
+.items-container .coll.i41   { background-position:-300px -100px;}
+.items-container .coll.i42   { background-position:-350px -100px;}
+.items-container .coll.i43   { background-position:-400px -100px;}
+.items-container .coll.i44   { background-position:-450px -100px;}
+.items-container .coll.i45   { background-position:-500px -100px;}
+.items-container .coll.i46   { background-position:-550px -100px;}
+.items-container .coll.i47   { background-position:-600px -100px;}
+.items-container .coll.i48   { background-position:-650px -100px;}
+.items-container .coll.i49   { background-position:-700px -100px;}
+.items-container .coll.i50   { background-position:-750px -100px;}
+.items-container .coll.i51   { background-position:-800px -100px;}
+.items-container .coll.i52   { background-position: -0px -150px;}
+.items-container .coll.i53   { background-position: -50px -150px;}
+.items-container .coll.i54   { background-position:-100px -150px;}
+.items-container .coll.i55   { background-position:-150px -150px;}
+.items-container .coll.i56   { background-position:-200px -150px;}
+.items-container .coll.i57   { background-position:-250px -150px;}
+.items-container .coll.i58   { background-position:-300px -150px;}
+.items-container .coll.i59   { background-position:-350px -150px;}
+.items-container .coll.i60   { background-position:-400px -150px;}
+.items-container .coll.i61   { background-position:-450px -150px;}
+.items-container .coll.i62   { background-position:-500px -150px;}
+.items-container .coll.i63   { background-position:-550px -150px;}
+.items-container .coll.i64   { background-position:-600px -150px;}
+.items-container .coll.i65   { background-position:-650px -150px;}
+.items-container .coll.i66   { background-position:-700px -150px;}
+.items-container .coll.i67   { background-position:-750px -150px;}
+.items-container .coll.i68   { background-position:-800px -150px;}
+.items-container .coll.i69   { background-position: -0px -200px;}
+.items-container .coll.i70   { background-position: -50px -200px;}
+.items-container .coll.i71   { background-position:-100px -200px;}
+.items-container .coll.i72   { background-position:-150px -200px;}
+.items-container .coll.i73   { background-position:-200px -200px;}
+.items-container .coll.i74   { background-position:-250px -200px;}
+.items-container .coll.i75   { background-position:-300px -200px;}
+.items-container .coll.i76   { background-position:-350px -200px;}
+.items-container .coll.i77   { background-position:-400px -200px;}
+.items-container .coll.i78   { background-position:-450px -200px;}
+.items-container .coll.i79   { background-position:-500px -200px;}
+.items-container .coll.i80   { background-position:-550px -200px;}
+.items-container .coll.i81   { background-position:-600px -200px;}
+.items-container .coll.i82   { background-position:-650px -200px;}
+.items-container .coll.i83   { background-position:-700px -200px;}
+.items-container .coll.i84   { background-position:-750px -200px;}
+.items-container .coll.i85   { background-position:-800px -200px;}
+.items-container .coll.i86   { background-position: 0px -250px;}

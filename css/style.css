@@ -501,6 +501,10 @@ h1 {
 	z-index:9003;
 	min-height: 100px;
 	text-align: left;
+	max-height: calc(100vh - 80px);
+	overflow-y: auto;
+	scrollbar-width: auto;
+	scrollbar-color: #442414 #c7c7c7;
 }
 .main .itm-popup .r-unlock {
 	padding: 0;
@@ -512,7 +516,11 @@ h1 {
 .main .itm-popup .afterbirth-item,
 .main .itm-popup .afterbirth-plus-item,
 .main .itm-popup .antibirth-item,
-.main .itm-popup .repentance-item  {
+.main .itm-popup .repentance-item,
+.main .itm-popup .hyperbirth-item,
+.main .itm-popup .pills,
+.main .itm-popup .coll
+{
 	position:absolute;
 	transform:scale(1.2);
 	bottom:20px;
@@ -716,9 +724,24 @@ h1.red {
 .main .textbox .a:hover {
 	/*z-index: 0;*/
 }
-.main .textbox[data-cid='1001'],
-.main .textbox.english {
-    background: rgba(255, 0, 0, 0.12);
+
+.main .textbox[back='rotten'] {
+    background: rgba(59, 61, 50, 0.5);
+}
+.main .textbox[back='toybox'] {
+    background: rgba(99, 42, 38, 0.5);
+}
+.main .textbox[back='golden'] {
+    background: rgba(88, 66, 3, 0.5);
+}
+.main .textbox[back='sewage'] {
+    background: rgba(43, 66, 75, 0.5);
+}
+.main .textbox[back='quarry'] {
+    background: rgba(99, 46, 20, 0.5);
+}
+.main .textbox[back='cursed'] {
+    background: rgba(84, 49, 109, 0.5);
 }
 
 /*.main .textbox[data-cid='1001']:after {
@@ -744,7 +767,31 @@ h1.red {
 body {
 	counter-reset: section; 
 }
-.main .textbox[data-tid='619']:after {
+.main .itm-popup .antibirth-item.anb-itm245,
+.main .itm-popup .antibirth-item.anb-itm110,
+.main .itm-popup .antibirth-item.anb-itm287,
+.main .itm-popup .antibirth-item.anb-itm205,
+.main .itm-popup .rebirth-item.r-itm168,
+.main .itm-popup .rebirth-item.r-itm020,
+.main .itm-popup .rebirth-item.r-itm073,
+.main .itm-popup .afterbirth-plus-item.a-itm515,
+.main .itm-popup .hyperbirth-item.hyp26
+{
+		position:absolute;
+		top: 32px;
+		bottom: initial;
+		right: initial;
+}
+.main .itm-popup .rebirth-item.r-itm190,
+.main .itm-popup .afterbirth-item.a-itm445
+{
+		position:absolute;
+		top: 5px;
+		bottom: initial;
+		right: initial;
+}
+
+/*.main .textbox[data-tid='619']:after {
 	counter-increment: section;
 	content: counter(section);
 	position: absolute;
@@ -756,8 +803,8 @@ body {
 }
 .main .textbox[data-tid='619']:last-child:after {
 	content: '2';
-}
-.main .textbox[data-tid='3']:after {
+}*/
+.main .textbox[corner='52']:after {
 	content: '52';
 	position: absolute;
 	z-index: 90;
@@ -767,7 +814,7 @@ body {
 	font-weight:bold;
 	color: #fff;
 }
-.main .textbox[data-tid='4']:after {
+.main .textbox[corner='53']:after {
 	content: '53';
 	position: absolute;
 	z-index: 90;
@@ -777,7 +824,7 @@ body {
 	font-weight:bold;
 	color: #fff;
 }
-.main .textbox[data-tid='013']:after {
+.main .textbox[corner='count1']:after {
 	content: '1';
 	position: absolute;
 	z-index: 90;
@@ -786,7 +833,7 @@ body {
 	font-size: 15px;
 	color: #fff;
 }
-.main .textbox[data-tid='014']:after {
+.main .textbox[corner='count2']:after {
 	content: '2';
 	position: absolute;
 	z-index: 90;
@@ -795,7 +842,7 @@ body {
 	font-size: 15px;
 	color: #fff;
 }
-.main .textbox[data-tid='015']:after {
+.main .textbox[corner='count3']:after {
 	content: '3';
 	position: absolute;
 	z-index: 90;
@@ -804,7 +851,7 @@ body {
 	font-size: 15px;
 	color: #fff;
 }
-.main .textbox[data-tid='052']:after {
+.main .textbox[corner='spoiled']:after {
 	content: '-';
 	position: absolute;
 	z-index: 90;
@@ -813,35 +860,8 @@ body {
 	font-size: 15px;
 	color: #fff;
 }
-.main .textbox[data-tid='053']:after {
+.main .textbox[corner='super']:after {
 	content: '+';
-	position: absolute;
-	z-index: 90;
-	right: 1px;
-	top: 0px;
-	font-size: 15px;
-	color: #fff;
-}
-.main .textbox[data-tid='0111']:after {
-	content: '1';
-	position: absolute;
-	z-index: 90;
-	right: 1px;
-	top: 0px;
-	font-size: 15px;
-	color: #fff;
-}
-.main .textbox[data-tid='0112']:after {
-	content: '2';
-	position: absolute;
-	z-index: 90;
-	right: 1px;
-	top: 0px;
-	font-size: 15px;
-	color: #fff;
-}
-.main .textbox[data-tid='0113']:after {
-	content: '3';
 	position: absolute;
 	z-index: 90;
 	right: 1px;
@@ -939,7 +959,10 @@ body.hidedlc .main .textbox.dlc:after {
 .main .textbox .a .afterbirth-item,
 .main .textbox .a .afterbirth-plus-item,
 .main .textbox .a .antibirth-item,
-.main .textbox .a .repentance-item
+.main .textbox .a .repentance-item,
+.main .textbox .a .hyperbirth-item,
+.main .textbox .a .pills,
+.main .textbox .a .coll
  {
 	margin: 0px -1px;
 }
@@ -948,7 +971,11 @@ body.hidedlc .main .textbox.dlc:after {
 .main .textbox .a .afterbirth-item.closer,
 .main .textbox .a .afterbirth-plus-item.closer,
 .main .textbox .a .antibirth-item.closer,
-.main .textbox .a .repentance-item.closer,  {
+.main .textbox .a .repentance-item.closer,
+.main .textbox .a .hyperbirth-item.closer,
+.main .textbox .a .pills,
+.main .textbox .a .coll
+{
 	margin: 0px;
 }
 .main .tarot-container .textbox a .item,
@@ -956,7 +983,11 @@ body.hidedlc .main .textbox.dlc:after {
 .main .tarot-container .textbox a .afterbirth-item,
 .main .tarot-container .textbox a .afterbirth-plus-item,
 .main .tarot-container .textbox a .antibirth-item,
-.main .tarot-container .textbox a .repentance-item {
+.main .tarot-container .textbox a .repentance-item,
+.main .tarot-container .textbox a .hyperbirth-item,
+.main .tarot-container .textbox a .pills,
+.main .tarot-container .textbox a .coll
+{
 	margin: 0px -1px;
 }
 /*	------------------------------------------------------------------------------------------- Рамка при наведение на предмет: */
@@ -965,7 +996,11 @@ body.hidedlc .main .textbox.dlc:after {
 .main .textbox .a:hover .repentance-item,
 .main .textbox .a:hover .afterbirth-item,
 .main .textbox .a:hover .afterbirth-plus-item,
-.main .textbox .a:hover .antibirth-item {
+.main .textbox .a:hover .antibirth-item,
+.main .textbox .a:hover .hyperbirth-item,
+.main .textbox .a:hover .pills,
+.main .textbox .a:hover .coll
+{
 	box-shadow: 0 0 0 4px #D3D3D3;
 	-moz-box-shadow: 0 0 0 4px #D3D3D3;
 	-webkit-box-shadow: 0 0 0 4px #D3D3D3;
@@ -1066,23 +1101,23 @@ body.hidedlc .main .textbox.dlc:after {
 	position: relative;
 	top: 8px;
 }
-.update-block .item-title-verybig,
-.main .textbox .item-title-verybig {
-	text-decoration: underline;
-	text-transform: uppercase;
-	letter-spacing: .1em;
-	font-size: 12px;
-	text-align:center;
-	margin: 11px 0px -2px 0px;
-	position: relative;
-	top: 8px;
-}
 .update-block .item-title-bbig,
 .main .textbox .item-title-bbig {
 	text-decoration: underline;
 	text-transform: uppercase;
 	letter-spacing: .1em;
 	font-size: 13px;
+	text-align:center;
+	margin: 11px 0px -2px 0px;
+	position: relative;
+	top: 8px;
+}
+.update-block .item-title-verybig,
+.main .textbox .item-title-verybig {
+	text-decoration: underline;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-size: 12px;
 	text-align:center;
 	margin: 11px 0px -2px 0px;
 	position: relative;
@@ -1151,6 +1186,7 @@ body.repentance .main .textbox .r-special {
 	position: absolute;
 	right: 0;
 	top: 7px;
+	font-size: 11px;
 }
 
 .main .textbox .special {
@@ -1292,7 +1328,11 @@ footer {
 .dark .main .textbox .a:hover .item, 
 .dark .main .textbox .a:hover .rebirth-item,
 .dark .main .textbox .a:hover .afterbirth-item,
-.dark .main .textbox .a:hover .repentance-item {
+.dark .main .textbox .a:hover .repentance-item,
+.dark .main .textbox .a:hover .hyperbirth-item,
+.dark .main .textbox .a:hover .pills,
+.dark .main .textbox .a:hover .coll
+{
 	box-shadow: 0 0 0 4px #272727;
 	-webkit-box-shadow: 0 0 0 4px #272727;
 	-moz-box-shadow: 0 0 0 4px #272727;
@@ -1999,14 +2039,22 @@ margin-bottom: 6px;
 .transformations .trans-box .afterbirth-item,
 .transformations .trans-box .rebirth-item,
 .transformations .trans-box .afterbirth-plus-item,
-.transformations .trans-box .repentance-item {
+.transformations .trans-box .repentance-item,
+.transformations .trans-box .hyperbirth-item,
+.transformations .trans-box .pills,
+.transformations .trans-box .coll
+{
     position: relative;
 }
 
 .transformations .trans-box .afterbirth-item:hover span,
 .transformations .trans-box .rebirth-item:hover span,
 .transformations .trans-box .afterbirth-plus-item:hover span,
-.transformations .trans-box .repentance-item:hover span {
+.transformations .trans-box .repentance-item:hover span,
+.transformations .trans-box .hyperbirth-item:hover span,
+.transformations .trans-box .pills:hover span,
+.transformations .trans-box .coll:hover span
+{
     display: block
 }
 
@@ -2520,7 +2568,7 @@ margin-bottom: 6px;
 			0 0;
 	}
 	.items-container.rebirth, .trinkets-container.rebirth, .tarot-container.rebirth,
-	.items-container.afterbirth, .trinkets-container.afterbirth, .tarot-container.afterbirth, .items-container.antibirth, .trinkets-container.repentance, .items-container.repentance {
+	.items-container.afterbirth, .trinkets-container.afterbirth, .tarot-container.afterbirth, .items-container.antibirth, .trinkets-container.repentance, .items-container.repentance, .items-container.hyperbirth, .items-container.pills, .items-container.coll {
 		padding: 0px 27px 0px;
 	}
 	.main .itm-popup.trinkets-container .rebirth-item,
@@ -2589,7 +2637,11 @@ margin-bottom: 6px;
 		
 	.rebirth-item,
 	.repentance-item,
-	.afterbirth-item{
+	.afterbirth-item,
+	.hyperbirth-item,
+	.pills,
+	.coll
+	{
 		margin: 0px 1px!important;
 	}
 
