@@ -3,7 +3,7 @@
 * {
 	font-family: 'Team Meat Cyrillic';
 	text-decoration: none;
-	src: local('Team Meat Cyrillic'), url(../fonts/TeamMeatCyrillic.otf);
+	src: url(../fonts/TeamMeatCyrillic.otf) format("opentype");
 }
 ul {
 	padding: 0;
@@ -19,7 +19,7 @@ body {
 	font-family: 'Team Meat Cyrillic';
 	margin: 0;
 	line-height: normal;
-	src: local('Team Meat Cyrillic'), url(../fonts/TeamMeatCyrillic.otf);
+	src: url(../fonts/TeamMeatCyrillic.otf) format("opentype");
 }
 a:active {
 	color: #5765ea;
@@ -58,7 +58,7 @@ header {
 	position:fixed;
 	z-index:9001;
 	font-family: 'Team Meat Cyrillic';
-	src: local('Team Meat Cyrillic'), url(../fonts/TeamMeatCyrillic.otf);
+	src: url(../fonts/TeamMeatCyrillic.otf);
 	-moz-box-shadow: 1px 3px 4px 0 rgba(0,0,0,0.4);
 	-webkit-box-shadow: 1px 3px 4px 0 rgba(0,0,0,0.4);
 	box-shadow: 1px 3px 4px 0 rgba(0,0,0,0.4);
