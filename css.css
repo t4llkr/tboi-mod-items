@@ -19,5 +19,5 @@
   font-family: "Team Meat Font";
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/TeamMeatCyrillic.otf);
+  src: url(../fonts/TeamMeatCyrillic.otf) format("opentype");
 }
