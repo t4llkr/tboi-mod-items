@@ -1,9 +1,12 @@
 ﻿@import url("reset.css");
+@font-face {
+  font-family: 'Team Meat Cyrillic';
+  src: url('../fonts/TeamMeatCyrillic.ttf');
+}
 
 * {
-	font-family: 'Team Meat Cyrillic';
+	font-family: 'Team Meat Cyrillic', Fallback, sans-serif;
 	text-decoration: none;
-	src: url(../fonts/TeamMeatCyrillic.otf) format("opentype");
 }
 ul {
 	padding: 0;
@@ -16,10 +19,9 @@ img {
 body {
 	min-width: 320px;
 	background: #d3d3d3;
-	font-family: 'Team Meat Cyrillic';
+	font-family: 'Team Meat Cyrillic', Fallback, sans-serif;
 	margin: 0;
 	line-height: normal;
-	src: url(../fonts/TeamMeatCyrillic.otf) format("opentype");
 }
 a:active {
 	color: #5765ea;
@@ -57,8 +59,7 @@ header {
 	width:100%;
 	position:fixed;
 	z-index:9001;
-	font-family: 'Team Meat Cyrillic';
-	src: url(../fonts/TeamMeatCyrillic.otf);
+	font-family: 'Team Meat Cyrillic', Fallback, sans-serif;
 	-moz-box-shadow: 1px 3px 4px 0 rgba(0,0,0,0.4);
 	-webkit-box-shadow: 1px 3px 4px 0 rgba(0,0,0,0.4);
 	box-shadow: 1px 3px 4px 0 rgba(0,0,0,0.4);
@@ -280,8 +281,7 @@ header .container .search input[type=text] {
 	background:url(../images/x2.png) no-repeat right -10px center #fff;
 	transition: background 0.4s;	
 	outline: none;
-	font-family: 'Team Meat Cyrillic', sans-serif;
-	src: local('Team Meat Cyrillic'), url(../fonts/TeamMeatCyrillic.otf);
+	font-family: 'Team Meat Cyrillic', Fallback, sans-serif;
 	font-size: 12px;
 }
 header .container .search input[type=text].x{
@@ -446,8 +446,7 @@ header .container .search .option-pools > div:hover {
 h1, h2, h3, h4 {
 	text-transform: uppercase;
 	letter-spacing: .1em;
-	font-family: 'Team Meat Cyrillic', sans-serif;	
-	src: local('Team Meat Cyrillic'), url(../fonts/TeamMeatCyrillic.otf);
+	font-family: 'Team Meat Cyrillic', Fallback, sans-serif;
 }
 h2, h3, h4 {
 	font-weight:normal;
@@ -518,6 +517,8 @@ h1 {
 .main .itm-popup .antibirth-item,
 .main .itm-popup .repentance-item,
 .main .itm-popup .hyperbirth-item,
+.main .itm-popup .neverbirth-item,
+.main .itm-popup .neverbirth-tr,
 .main .itm-popup .pills,
 .main .itm-popup .coll
 {
@@ -961,6 +962,8 @@ body.hidedlc .main .textbox.dlc:after {
 .main .textbox .a .antibirth-item,
 .main .textbox .a .repentance-item,
 .main .textbox .a .hyperbirth-item,
+.main .textbox .a .neverbirth-item,
+.main .textbox .a .neverbirth-tr,
 .main .textbox .a .pills,
 .main .textbox .a .coll
  {
@@ -973,6 +976,8 @@ body.hidedlc .main .textbox.dlc:after {
 .main .textbox .a .antibirth-item.closer,
 .main .textbox .a .repentance-item.closer,
 .main .textbox .a .hyperbirth-item.closer,
+.main .textbox .a .neverbirth-item.closer,
+.main .textbox .a .neverbirth-tr.closer,
 .main .textbox .a .pills,
 .main .textbox .a .coll
 {
@@ -985,6 +990,8 @@ body.hidedlc .main .textbox.dlc:after {
 .main .tarot-container .textbox a .antibirth-item,
 .main .tarot-container .textbox a .repentance-item,
 .main .tarot-container .textbox a .hyperbirth-item,
+.main .tarot-container .textbox a .neverbirth-item,
+.main .tarot-container .textbox a .neverbirth-tr,
 .main .tarot-container .textbox a .pills,
 .main .tarot-container .textbox a .coll
 {
@@ -998,6 +1005,8 @@ body.hidedlc .main .textbox.dlc:after {
 .main .textbox .a:hover .afterbirth-plus-item,
 .main .textbox .a:hover .antibirth-item,
 .main .textbox .a:hover .hyperbirth-item,
+.main .textbox .a:hover .neverbirth-item,
+.main .textbox .a:hover .neverbirth-tr,
 .main .textbox .a:hover .pills,
 .main .textbox .a:hover .coll
 {
@@ -1086,6 +1095,7 @@ body.hidedlc .main .textbox.dlc:after {
 	letter-spacing: .1em;
 	font-size: 16px;
 	text-align:center;
+	vertical-align: middle;
 	margin: 11px 0px -2px 0px;
 	position: relative;
 	top: 8px;
@@ -1097,6 +1107,7 @@ body.hidedlc .main .textbox.dlc:after {
 	letter-spacing: .1em;
 	font-size: 14px;
 	text-align:center;
+	vertical-align: middle;
 	margin: 11px 0px -2px 0px;
 	position: relative;
 	top: 8px;
@@ -1108,6 +1119,7 @@ body.hidedlc .main .textbox.dlc:after {
 	letter-spacing: .1em;
 	font-size: 13px;
 	text-align:center;
+	vertical-align: middle;
 	margin: 11px 0px -2px 0px;
 	position: relative;
 	top: 8px;
@@ -1119,6 +1131,7 @@ body.hidedlc .main .textbox.dlc:after {
 	letter-spacing: .1em;
 	font-size: 12px;
 	text-align:center;
+	vertical-align: middle;
 	margin: 11px 0px -2px 0px;
 	position: relative;
 	top: 8px;
@@ -1130,6 +1143,7 @@ body.hidedlc .main .textbox.dlc:after {
 	letter-spacing: .1em;
 	font-size: 11px;
 	text-align:center;
+	vertical-align: middle;
 	margin: 11px 0px -2px 0px;
 	position: relative;
 	top: 8px;
@@ -1141,6 +1155,7 @@ body.hidedlc .main .textbox.dlc:after {
 	letter-spacing: .1em;
 	font-size: 10px;
 	text-align:center;
+	vertical-align: middle;
 	margin: 11px 0px -2px 0px;
 	position: relative;
 	top: 8px;
@@ -1330,6 +1345,8 @@ footer {
 .dark .main .textbox .a:hover .afterbirth-item,
 .dark .main .textbox .a:hover .repentance-item,
 .dark .main .textbox .a:hover .hyperbirth-item,
+.dark .main .textbox .a:hover .neverbirth-item,
+.dark .main .textbox .a:hover .neverbirth-tr,
 .dark .main .textbox .a:hover .pills,
 .dark .main .textbox .a:hover .coll
 {
@@ -1726,8 +1743,7 @@ margin-bottom: 6px;
 	background: #d3d3d3;
 	padding: 10px;
 	padding-top:60px;
-	font-family: 'Team Meat Cyrillic', sans-serif;
-	src: local('Team Meat Cyrillic'), url(../fonts/TeamMeatCyrillic.otf);
+	font-family: 'Team Meat Cyrillic', Fallback, sans-serif;
 	margin:0 12% 0 12%;
 }
 .faq h1 {
@@ -1787,8 +1803,7 @@ margin-bottom: 6px;
 .generic,.seeds{
     background: #d3d3d3;
     padding: 60px 10px 10px;
-    font-family: 'Team Meat Cyrillic',sans-serif;
-	src: local('Team Meat Cyrillic'), url(../fonts/TeamMeatCyrillic.otf);
+    font-family: 'Team Meat Cyrillic', Fallback, sans-serif;
     margin: 0 5%
 }
 .seeds table {
@@ -2041,6 +2056,8 @@ margin-bottom: 6px;
 .transformations .trans-box .afterbirth-plus-item,
 .transformations .trans-box .repentance-item,
 .transformations .trans-box .hyperbirth-item,
+.transformations .trans-box .neverbirth-item,
+.transformations .trans-box .neverbirth-tr,
 .transformations .trans-box .pills,
 .transformations .trans-box .coll
 {
@@ -2052,6 +2069,8 @@ margin-bottom: 6px;
 .transformations .trans-box .afterbirth-plus-item:hover span,
 .transformations .trans-box .repentance-item:hover span,
 .transformations .trans-box .hyperbirth-item:hover span,
+.transformations .trans-box .neverbirth-item:hover span,
+.transformations .trans-box .neverbirth-tr:hover span,
 .transformations .trans-box .pills:hover span,
 .transformations .trans-box .coll:hover span
 {
@@ -2639,6 +2658,8 @@ margin-bottom: 6px;
 	.repentance-item,
 	.afterbirth-item,
 	.hyperbirth-item,
+	.neverbirth-item,
+	.neverbirth-tr,
 	.pills,
 	.coll
 	{
